@@ -11,7 +11,7 @@ function MentorForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const posted_mentor = await axios.post(
-      `https://muthu-mentors-server.herokuapp.com/Mentors`,
+      `https://thiru-task.herokuapp.com/Mentors`,
       { name, email, course }
     );
     setMentors([...mentors, posted_mentor.data]);

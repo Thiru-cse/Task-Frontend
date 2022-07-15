@@ -6,7 +6,7 @@ export const AssignMentorsContext = React.createContext();
 export const AssignMentorProvider = ({ children }) => {
   const [students, setStudents] = useState([]);
   const [mentors, setMentors] = useState([]);
-  const BaseURL = `https://muthu-mentors-server.herokuapp.com/`;
+  const BaseURL = `https://thiru-task.herokuapp.com/`;
   const fetchData = async () => {
     await axios
       .get(`${BaseURL}/Mentors`)

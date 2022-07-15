@@ -12,12 +12,12 @@ function AssignorChangeMentor() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const updated_mentor = await axios.patch(
-      `https://thiru-mentor-assign.herokuapp.com//Students/assign-mentor/${student}`,
+      `https://thiru-task.herokuapp.com/Students/assign-mentor/${student}`,
       { mentor }
     );
     console.log(updated_mentor);
     const stud_data = await axios.get(
-      `https://thiru-mentor-assign.herokuapp.com//Students`
+      `https://thiru-task.herokuapp.com/Students`
     );
     setStudents(stud_data.data);
     setStudent("");

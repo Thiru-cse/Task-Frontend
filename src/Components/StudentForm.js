@@ -13,7 +13,7 @@ function StudentForm() {
     console.log("AssignesMentor", assignmentor);
     console.log(name, batch, assignmentor);
     const posted_stud = await axios.post(
-      `https://muthu-mentors-server.herokuapp.com/Students`,
+      `https://thiru-task.herokuapp.com/Students`,
       { name, batch, mentor: assignmentor }
     );
     console.log(posted_stud.data);

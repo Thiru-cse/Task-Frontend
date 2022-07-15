@@ -13,7 +13,7 @@ function ShowMentorStudents() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const student_list = await axios.get(
-      `https://muthu-mentors-server.herokuapp.com/Students/mentor-students/${mentor}`
+      `https://thiru-task.herokuapp.com/Students/mentor-students/${mentor}`
     );
     console.log(student_list);
     setStudList(student_list.data);
